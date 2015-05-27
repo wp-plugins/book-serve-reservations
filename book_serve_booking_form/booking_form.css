@@ -1,0 +1,227 @@
+.vmbf_booking_form {
+	z-index:1000;
+	background-color:#eee;
+	padding:5px;
+	width:280px;
+	font-size:12px;
+	color:#000;
+}
+
+.vmbf_booking_form_form {
+}
+
+.vmbf_booking_form_terms_conditions_surround {
+	display:none;
+	position:absolute;
+	z-index:100000;
+	width:550px;
+	background-color:#e5e5e5;
+	padding:2px;
+	opacity:0.97;filter:alpha(opacity=97);
+	top:20px;
+}
+
+.vmbf_booking_form_terms_conditions_inside {
+	background-color:#eeeeee;
+	padding:10px;
+}
+
+.vmbf_booking_form_terms_conditions_close {
+	float:right;
+}
+
+.vmbf_booking_form_terms_conditions_caption {
+	clear:left;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.vmbf_booking_form_terms_conditions_content {
+	clear:left;
+	padding-top:5px;
+	font-size:12px;
+	overflow:scroll;
+	height:500px;
+}
+
+
+
+
+#vmbf_booking_form_arrival_row {
+	width:290px;
+}
+
+#vmbf_booking_form_departure_row {
+	width:290px;
+}
+
+#vmbf_booking_form_number_nights_row {
+	clear:left;
+	width:265px;
+}
+
+
+#vmbf_booking_form_rate_code_row {
+	clear:left;
+	width:225px;
+	height:25px;
+
+}
+
+#vmbf_booking_form_dates_flexible_row {
+	width:230px;
+	height:40px;
+	clear:left;
+}
+
+#vmbf_booking_form_terms_and_conditions_row {
+	height:40px;
+	line-height:18px;
+}
+
+
+
+#vmbf_booking_form_terms_and_conditions_row a:link {text-decoration: underline; color:black; }
+#vmbf_booking_form_terms_and_conditions_row a:visited {text-decoration: underline; color:black; }
+#vmbf_booking_form_terms_and_conditions_row a:active {text-decoration: underline; color:black;  }
+#vmbf_booking_form_terms_and_conditions_row a:hover {text-decoration: underline; color:black;  }
+
+
+.vmbf_book_button_position {
+	float:right;
+	margin-right:5px;
+}
+
+
+
+#vmbf_booking_form_check_availability_row {
+
+	padding-top:5px;
+	width:260px;
+}
+
+
+#vmbf_booking_form_arrival_label {
+
+	float:left;
+	padding-top:5px;
+	width:80px;
+	font-size:12px;
+
+}
+
+#vmbf_booking_form_departure_label {
+
+	float:left;
+	padding-top:5px;
+	width:80px;
+	font-size:12px;
+
+}
+
+#vmbf_booking_form_number_nights_label {
+
+	float:left;
+	padding-top:5px;
+	width:80px;
+	font-size:12px;
+
+}
+
+#vmbf_booking_form_rate_code_label {
+
+	float:left;
+	padding-top:5px;
+	width:80px;
+	font-size:12px;
+
+}
+
+#vmbf_booking_form_dates_flexible_label {
+
+	float:left;
+	padding-top:3px;
+	width:70px;
+	font-size:12px;
+
+}
+
+
+
+
+.vmbf_booking_form select {
+	background: #fff;
+	padding: 0px;
+	font-size: 16px;
+	border: 0px solid #ccc;
+	padding:3px;
+}
+
+
+
+
+#vmbf_booking_form_arrival_input_div {
+
+	float:left;
+	padding-top:2px;
+	width:194px;
+}
+
+#vmbf_booking_form_departure_input_div {
+
+	float:left;
+	padding-top:2px;
+	width:194px;
+
+}
+
+#vmbf_booking_form_number_nights_input_div {
+
+	float:left;
+	padding-top:2px;
+}
+
+#vmbf_booking_form_rate_code_input_div {
+	float:left;
+	padding-top:2px;
+	padding-left:0px;
+}
+
+#vmbf_booking_form_dates_flexible_input_div {
+
+	float:left;
+	padding-top:2px;
+	padding-left:55px;
+
+}
+
+
+
+#vmbf_booking_form_arrival_input {
+
+	width:96px;
+
+}
+
+#vmbf_booking_form_departure_input {
+
+	width:96px;
+
+}
+
+#vmbf_booking_form_rate_code_input {
+	border:0px;
+	width:100px;
+	height:24px;
+	float:left;
+	background: #fff;
+	font-size:16px;
+}
+
+#vmbf_booking_form_dates_flexible_input {
+
+	width:96px;
+
+}
+
+
