@@ -1,9 +1,9 @@
 <?php
 
    /*
-   Plugin Name: VM Wordpress Widget
+   Plugin Name: BookServe Online Booking Calendar
    Plugin URI: http://www.vinyl-matt.com
-   Description: Vinyl Mattt Booking Form
+   Description: Vinyl Matt Booking Form
    Version: 0.1
    Author: Bryan McEleney
    Author URI: http://www.vinyl-matt.com
