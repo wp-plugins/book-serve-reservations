@@ -80,7 +80,7 @@ function vmbf_booking_form($property_id, $action, $bke_url, $lang, $show_departu
 
 			?>
 
-			<form method="post" id="vmbf_property_booking_form" action="<? echo $url; ?>property_id=<?php echo $property_id; ?>&amp;lang=<?php echo $lang; ?>">
+			<form method="post" id="vmbf_property_booking_form" action="<?php echo $url; ?>property_id=<?php echo $property_id; ?>&amp;lang=<?php echo $lang; ?>">
 
 			<div class="vmbf_first_group" >
 

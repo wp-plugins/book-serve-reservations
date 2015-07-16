@@ -2,11 +2,11 @@
 
    /*
    Plugin Name: BookServe Online Booking Calendar
-   Plugin URI: http://www.vinyl-matt.com
-   Description: Vinyl Matt Booking Form
+   Plugin URI: https://book-serve.com
+   Description: Book Serve Booking Form
    Version: 0.1
-   Author: Bryan McEleney
-   Author URI: http://www.vinyl-matt.com
+   Author: Book Serve
+   Author URI: https://book-serve.com
    */
 
 include "utils.php";
@@ -16,12 +16,12 @@ class VMBFWordpressWidget extends WP_Widget {
           function VMBFWordpressWidget() {
 		$widget_ops = array(
 			'classname' => 'VMBFWordpressWidget',
-			'description' => 'Vinyl Matt Booking Form'
+			'description' => 'Book Serve Booking Form'
 		);
 
 		$this->WP_Widget(
 		    'VMBFWordpressWidget',
-		    'VM Wordpress Widget',
+		    'Book Serve Widget',
 		    $widget_ops
 		);
 	}
@@ -63,7 +63,7 @@ function vmbf_load_our_scripts() {
 //add options page
 add_action('admin_menu', 'vmbf_wordpress_plugin_add_options_page');
 function vmbf_wordpress_plugin_add_options_page() {
-	add_options_page('VM Wordpress Plugin', 'VM Wordpress Plugin', 'manage_options', 'plugin', 'vmbf_wordpress_plugin_options_page');
+	add_options_page('Book Serve Plugin', 'Book Serve Plugin', 'manage_options', 'plugin', 'vmbf_wordpress_plugin_options_page');
 }
 
 
@@ -74,7 +74,7 @@ function vmbf_wordpress_plugin_options_page() {
 
 <div>
 
-	<h2>Vinyl Matt Booking Form Plugin</h2>
+	<h2>Book Serve Booking Form Plugin</h2>
 
 	<form action="options.php" method="post">
 		<?php settings_fields('vmbf_plugin_options'); ?>
@@ -100,7 +100,9 @@ function vmbf_wordpress_plugin_init() {
 	add_settings_section('plugin_main', 'Main Settings', 'vmbf_plugin_section_text', 'plugin');
 
 	add_settings_field('booking_engine_url', 'Booking Engine URL', 'vmbf_plugin_setting_string', 'plugin', 'plugin_main', array("booking_engine_url"));
+
 	add_settings_field('language_iso', 'Language ISO', 'vmbf_plugin_setting_string', 'plugin', 'plugin_main', array("language_iso"));
+
 	/* add_settings_field('show_departure', 'Show Departure', 'vmbf_plugin_setting_yes_no', 'plugin', 'plugin_main', array("show_departure")); */
 	add_settings_field('show_number_nights', 'Show Number of Nights ( instead of departure )', 'vmbf_plugin_setting_yes_no', 'plugin', 'plugin_main', array("show_number_nights"));
 	add_settings_field('num_nights_min', 'Minimum Number Nights', 'vmbf_plugin_setting_string', 'plugin', 'plugin_main', array("num_nights_min"));
