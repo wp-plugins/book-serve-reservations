@@ -4,7 +4,7 @@
    Plugin Name: BookServe Online Booking Calendar
    Plugin URI: https://book-serve.com
    Description: Book Serve Booking Form
-   Version: 0.1
+   Version: 1.0
    Author: Book Serve
    Author URI: https://book-serve.com
    */
@@ -99,9 +99,9 @@ function vmbf_wordpress_plugin_init() {
 
 	add_settings_section('plugin_main', 'Main Settings', 'vmbf_plugin_section_text', 'plugin');
 
-	add_settings_field('booking_engine_url', 'Booking Engine URL', 'vmbf_plugin_setting_string', 'plugin', 'plugin_main', array("booking_engine_url"));
+	add_settings_field('booking_engine_url', 'Booking Engine URL', 'vmbf_plugin_setting_string_booking_engine_url', 'plugin', 'plugin_main', array("booking_engine_url"));
 
-	add_settings_field('language_iso', 'Language ISO', 'vmbf_plugin_setting_string', 'plugin', 'plugin_main', array("language_iso"));
+	add_settings_field('language_iso', 'Language ISO', 'vmbf_plugin_setting_string_language_iso', 'plugin', 'plugin_main', array("language_iso"));
 
 	/* add_settings_field('show_departure', 'Show Departure', 'vmbf_plugin_setting_yes_no', 'plugin', 'plugin_main', array("show_departure")); */
 	add_settings_field('show_number_nights', 'Show Number of Nights ( instead of departure )', 'vmbf_plugin_setting_yes_no', 'plugin', 'plugin_main', array("show_number_nights"));
@@ -126,6 +126,24 @@ function vmbf_plugin_setting_string($args) {
 	echo "<input id='" . $args[0] . "' name='vmbf_plugin_options[" . $args[0] . "]' size='40' type='text' value='{$options[$args[0]]}' />";
 
 }
+
+
+function vmbf_plugin_setting_string_booking_engine_url($args) {
+
+	vmbf_plugin_setting_string($args);
+
+	echo "<br /><i>Your URL will be something like https://propertyname.book-serve.com. Check your book-serve.com signup email for this information.</i>";
+
+}
+
+function vmbf_plugin_setting_string_language_iso($args) {
+
+	vmbf_plugin_setting_string($args);
+
+	echo "<br /><i>Use EN for English, FR for French et cetera.</i>";
+
+}
+
 
 function vmbf_plugin_setting_yes_no($args) {
 
